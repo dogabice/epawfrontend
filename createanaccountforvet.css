@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #FFF6F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+header {
+    background-color: #FFF6F1;
+    height: 1000px;
+    text-align: center;
+    padding-top: calc(106px + 4rem);
+}
+
+/*TITLE*/
+#logo-box {
+    float: left;
+    padding-top: 0.5rem;
+}
+
+#logo-box .logo {
+    color: #000000;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+/*HEADER PART*/
+
+.createanaccountforvet {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+#inputvaluesforvet1,
+#inputvaluesforvet2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#inputvaluesforvet1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#inputvaluesforvet2 {
+    position: absolute;
+    top: 30%;
+    left: 60%;
+}
+
+#inputvaluesforvet1 input,
+#inputvaluesforvet2 input {
+    width: 300px;
+    height: 50px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 15px;
+    box-shadow: 2px 2px 2px #656464;
+}
+
+
+.submitbutton {
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 80%;
+    left: 47%;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(10deg, #085F63, #3F7F82, #b5f0ec);
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .createanaccountforvet {
+        font-size: 20px;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #inputvaluesforvet1,
+    #inputvaluesforvet2 {
+        width: 90%;
+        max-width: none;
+        left: 55%;
+        transform: translateX(-50%);
+        top: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        
+    }
+
+    #inputvaluesforvet1 {
+        top: 25%;
+    }
+
+    #inputvaluesforvet2 {
+        top: 60%;
+    }
+
+    #inputvaluesforvet1 input,
+    #inputvaluesforvet2 input {
+        width: 90%;
+        max-width: none;
+        height: 40px;
+    }
+
+    .submitbutton {
+        width: 90%;
+        max-width: none;
+        left: 50%;
+        top: 90%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+}
+
+

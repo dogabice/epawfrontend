@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+header {
+    background-color: #FFF6F1;
+    height: 1000px;
+    text-align: center;
+    padding-top: calc(106px + 4rem);
+    /*navbar fixed olduğu için eklentilerin altta kalmasını engellemek için bu fonksiyonu kullanabiliriz (106= navbar ın kapladığı alan)*/
+}
+.petphoto{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: fixed;
+    left: 150px;
+    top: 150px;
+}
+
+#petinformations{
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #656464;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    position: fixed;
+    top: 350px;
+    left: 140px;
+    padding-bottom: 10px;
+}
+.pet-info-box label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#appointmentbtn{
+    width: 150px;
+    height: 40px;
+    padding: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    bottom: 55px;
+    left: 47%;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 2px 2px 2px #656464;
+    background: linear-gradient(10deg, #085F63, #3F7F82, #b5f0ec);
+    color: #fff;
+}
+.healthrecordslbl{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+#healthrecords{
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #656464;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+    position: absolute;
+    top:220px;
+    left: 540px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 600px; /* Adjust according to your needs */
+    }
+
+    .petphoto {
+        width: 80px; /* Adjust according to your needs */
+        height: 80px; /* Adjust according to your needs */
+        top: 100px; /* Adjust according to your needs */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #petinformations,
+    #healthrecords {
+        width: 90%;
+        max-width: none;
+        left: 5%;
+    }
+
+    #petinformations{
+        top: 200px;
+        left: 20px;
+    }
+    .healthrecordslbl {
+        top: 420px; /* Adjust according to your needs */
+        font-size: 20px;
+        display: inline;
+        left: 5%;
+    }
+
+    #healthrecords {
+        width: 90%;
+        max-width: none;
+        left: 5%;
+        top: 450px; /* Adjust according to your needs */
+    }
+
+    #appointmentbtn {
+        width: 90%;
+        max-width: none;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px; /* Adjust according to your needs */
+    }
+}
